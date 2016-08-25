@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Router</title>
+		<script src="lib/requirejs/require.js" data-main="main.js"></script>
+	</head>
+	<body ng-controller="appController">
+		<div ng-if="isAuthenticated && !state.includes('login')">
+			<div >
+				<div topnav></div>
+			</div>
+		</div>
+
+		<div class="main-container no-skin">
+
+			<div ui-view></div>
+
+		</div>
+	</body>
+</html>
